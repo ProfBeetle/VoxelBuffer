@@ -1,5 +1,5 @@
 # VoxelBuffer
-With the VoxelBuffer you can set voxels anywhere without having to worry about Region bounds or 4x4 alignment. You can
+With the VoxelBuffer you can set Smooth Terrain voxels anywhere without having to worry about Region bounds or 4x4 alignment. You can
 set thousands of them (up to the limits of your computer) then commit them all at once to your Terrain in one call.
 
 It works by internally dividing world space up into regions and tracking changes within those regions in
@@ -18,7 +18,7 @@ The VoxelBuffer has 3 main functions, setVoxel(x, y, z, material, occupancy), ge
 	voxelBuffer:setVoxel(10000, 10000, 10000, Enum.Material.Ground, 1)
 	voxelBuffer:commitToTerrian()
 	
-NOTE: setVoxel() and getVoxel() take world space block locations but voxels are 4x4 blocks, 
+NOTE: setVoxel() and getVoxel() take world space block locations but Terrain voxels are 4x4 blocks, 
 so calling setVoxel(0, 0, 0, m, 1) and setVoxel(3, 3, 3, m, 1) sets
 the exact same voxel twice.
 
