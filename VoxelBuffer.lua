@@ -34,7 +34,6 @@ the exact same voxel twice.
 
 -- buffer size, you can set these to (almost) anything, I've optimized them for my use
 -- the one limitation is that they can't be larger than the maximums for a Region3
--- NOTE: they must also be divisable by 4 or wierd things will happen at the edges
 -- NOTE: they must also be divisible by 4 or weird things will happen at the edges
 local bufferXMax = 256
 local bufferYMax = 40
